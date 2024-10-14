@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+# ReactJS TypeScript Project with Webpack and Module Federation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Este projeto é um exemplo de aplicação React configurada com TypeScript, Webpack, Module Federation e diversas outras bibliotecas úteis. Ele utiliza o Webpack para o bundling dos arquivos e o Tsup para realizar o build, juntamente com algumas ferramentas populares para testes, roteamento, e gerenciamento de estado.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+- **React 18**: Utiliza a última versão do React (18.3.1), que oferece diversas otimizações e melhorias, incluindo o Concurrent Mode.
+- **TypeScript**: Desenvolvimento tipado com TypeScript (v5.6.3), ajudando a prevenir erros em tempo de desenvolvimento.
+- **Webpack 5**: Bundling com Webpack (v5.95.0), junto com Webpack Dev Server para rodar o ambiente de desenvolvimento.
+- **Module Federation**: Arquitetura modular com o Webpack Module Federation, permitindo que módulos sejam expostos e consumidos dinamicamente entre aplicações.
+- **React Router v6**: Para gerenciamento de rotas dentro da aplicação.
+- **Tsup**: Utilizado para build de pacotes de TypeScript de forma rápida e otimizada.
+- **Zustand**: Gerenciamento de estado leve e eficiente com Zustand.
+- **Testes**: Configurado com Testing Library e Jest para testes unitários e de integração.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Requisitos
 
-### `yarn test`
+Antes de iniciar, certifique-se de que você possui o seguinte instalado:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (>=16.x.x)
+- Yarn (>=1.22.x)
 
-### `yarn build`
+## Como rodar o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Instalar as dependências
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Antes de tudo, instale todas as dependências do projeto usando Yarn:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+yarn install
+```
+O servidor estará disponível em http://localhost:3000.
 
-### `yarn eject`
+```bash
+yarn build
+```
+Os arquivos de saída estarão disponíveis na pasta dist.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn test
+```
+Isso rodará todos os testes e exibirá os resultados no terminal.
