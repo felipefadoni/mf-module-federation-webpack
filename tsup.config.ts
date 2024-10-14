@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-	entry: ["src/index.tsx"],
+	entry: ["src/*.*"],
 	format: ["esm", "cjs"],
 	dts: true, // Gerar arquivos .d.ts para tipos
 	sourcemap: true, // Mapas de origem para debug
